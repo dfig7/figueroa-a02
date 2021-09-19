@@ -11,6 +11,9 @@ Ask user their age, "What is your current age?" and save age in <getAge>
 Prompt user the age in which they would like to retire, "At what age would you like to retire?", and save in <retireAge>
 Tell user how many years they have until they retire
     <retireAge> - <getAge>
+Make method to get the current year from computer system
+Use the method in last print statement telling the user what year it is and what year they will retire
+by adding the current year with the year left
 
  */
 
