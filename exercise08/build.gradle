@@ -24,13 +24,5 @@ run {
 }
 
 application {
-    mainClass = "Solution07"
-}
-
-run {
-    standardInput = System.in
-}
-
-application {
-    mainClass = "Solution07"
+    mainClass = "Solution08"
 }
