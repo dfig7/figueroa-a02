@@ -17,5 +17,30 @@ State how many pizzas would be leftover by finding the remainder of <slices%peop
 public class Solution12 {
     private static final Scanner input = new Scanner(System.in);
 
+    public static int getPrincipal(){
+        System.out.println("Enter the principal: ");
+        return input.nextInt();
+    }
 
+    public static double getRate(){
+        System.out.println("Enter the rate of interest: ");
+        return input.nextDouble();
+    }
+    public static int getYears(){
+        System.out.println("Enter the number of years: ");
+        return input.nextInt();
+    }
+
+    public static void calcAmountAccrued(){
+        int principal = getPrincipal();
+        double rate = getRate();
+        int years = getYears();
+
+        double total = Math.ceil((principal * (1+(rate/100) * ((double)years)) * 100)/100);
+        System.out.printf("After %d years at %.01f, the investment will be worth $%.02f", years, rate, total);
+    }
+
+    public static void main(String[] args) {
+        calcAmountAccrued();
+    }
 }
